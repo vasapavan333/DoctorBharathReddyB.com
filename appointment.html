@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Clinic Details - Dr. [Name] Orthopedic Clinic in Andhra Pradesh. OPD Timings, Location, Emergency Services">
+    <meta name="keywords" content="Clinic, Hospital, Andhra Pradesh, OPD Timings, Location, Emergency">
+    <title>Clinic Details | Dr. Buchupalli Bharath Reddy | Andhra Pradesh</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-user-md"></i>
+                    <span>Dr. Bharath Reddy B </span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="clinic.html">Clinic</a></li>
+                    <li><a href="appointment.html">Appointment</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Book an Appointment</h1>
+            <p>Schedule Your Consultation Today...!!</p>
+        </div>
+    </section>
+
+    <section class="appointment-section">
+        <div class="container">
+            <div class="appointment-form-container">
+
+                <form id="appointmentForm">
+
+                    <div class="form-group">
+                        <label>Full Name *</label>
+                        <input type="text" id="fullName" name="Full Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Phone Number *</label>
+                        <input type="tel" id="phoneNumber" name="Phone Number"
+                            placeholder="please enter your 10 digits contact number" pattern="[0-9]{10}" maxlength="10"
+                            inputmode="numeric" oninput="this.value=this.value.replace(/[^0-9]/g,'')" required>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" id="emailAddress" name="Email Address">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Preferred Date *</label>
+                        <input type="date" id="preferredDate" name="Preferred Date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Preferred Time *</label>
+                        <select id="preferredTime" name="Preferred Time" required>
+                            <option value="">Select time</option>
+
+                            <option>10:00 - 11:00</option>
+                            <option>11:00 - 12:00</option>
+                            <option>12:00 - 01:00</option>
+                            <option>05:30 - 06:30</option>
+                            <option>06:30 - 07:30</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Reason for Visit *</label>
+                        <select id="visitReason" name="Reason for Visit" required>
+                            <option value="">Select</option>
+                            <option>Joint Pain</option>
+                            <option>Fracture</option>
+                            <option>Sports Injury</option>
+                            <option>Back Pain</option>
+                            <option>Follow-up</option>
+                            <option>Any other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Additional Information</label>
+                        <textarea id="additionalInfo" name="Additional Information"></textarea>
+                    </div>
+
+                    <!-- Hidden timestamp -->
+                    <input type="hidden" id="submittedAt">
+
+                    <!-- Payment placeholder -->
+                    <div class="form-group">
+
+                    </div>
+                    <br>
+
+                    <button type="submit" class="btn btn-primary">Submit Appointment</button>
+
+                </form>
+
+                <div id="formMessage" style="display:none;"></div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+<!-- Footer -->
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Dr. Buchupalli Bharath Reddy</h3>
+                <p>Expert Orthopedic Surgeon | MS Ortho | Specialist in Sports Injuries Running |Knee Preservation
+                    Surgery (HTO) | Meniscal Transplant | Shoulder Arthroscopy | Hip Preservation</p>
+                <p></p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="clinic.html">Clinic</a></li>
+                    <li><a href="appointment.html">Appointment</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="appointment.html">Appointment</a></li>
+                    <li><a href="tel:+91XXXXXXXXXX">+91 94909 19979</a></li>
+                    <li><a href="mailto:doctor@example.com">bharathbonejointcarer@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us On Social Media</h4>
+                <div class="social-links">
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/bharath_bone_joint_care?igsh=MWN0ZzltbDI5MDU5ZQ=="
+                        target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <!-- YouTube -->
+                    <a href="https://youtube.com/@boneandjointcare206?si=J0CkX3VTQGpN3wur" target="_blank"
+                        aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+
+                    <!-- Facebook (optional) -->
+                    <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <!-- Twitter (optional) -->
+                    <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-x"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Dr. Buchupalli Bharath Reddy. All rights reserved.</p>
+            <script>document.getElementById('currentYear').textContent = new Date().getFullYear();</script>
+        </div>
+    </div>
+</footer>
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/9490919979" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="script.js"></script>
+</body>
+
+</html>
